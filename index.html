@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" media= "(max-width:768px)" href="css/tablet.css">
+    <link rel="stylesheet" media= "(max-width:500px)" href="css/mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" href="">
+    <title>Resistor Calculator</title>
+</head>
+<body>
+    <header style="background-color: #0C0C0F;">
+        <div class="container">
+            <div id="navbar">
+                <h1 class="heading-large">RESISTOR CALCULATOR</h1>
+            </div>
+        </div>
+    </header>
+
+    <section >
+        <div class="main-box">
+            <div class="gui-box"> 
+                <div class="resistor-box">
+                    
+                    <div class="resistor2">
+                        <div id="band1" class="band">
+                            <select class="selected-digits">
+                                <option selected="true" disabled="disabled" value="null">Band 1</option>
+                                <option class="digits" value="0">black</option>
+                                <option class="digits" value="1">brown</option>
+                                <option class="digits" value="2">red</option>
+                                <option class="digits" value="3">orange</option>
+                                <option class="digits" value="4">yellow</option>
+                                <option class="digits" value="5">green</option>
+                                <option class="digits" value="6">blue</option>
+                                <option class="digits" value="7">violet</option>
+                                <option class="digits" value="8">grey</option>
+                                <option class="digits" value="9">white</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="resistor" class="resistor">
+                        <div id="band2" class="band">
+                            <select class="selected-digits">
+                                <option selected="true" disabled="disabled" value="null">Band 2</option>
+                                <option class="digits" value="0">black</option>
+                                <option class="digits" value="1">brown</option>
+                                <option class="digits" value="2">red</option>
+                                <option class="digits" value="3">orange</option>
+                                <option class="digits" value="4">yellow</option>
+                                <option class="digits" value="5">green</option>
+                                <option class="digits" value="6">blue</option>
+                                <option class="digits" value="7">violet</option>
+                                <option class="digits" value="8">grey</option>
+                                <option class="digits" value="9">white</option>
+                            </select>
+                        </div>
+                        <div id="band3" class="band">
+                            <select class="selected-digits">
+                                <option selected="true" disabled="disabled" value="null">Band 3</option>
+                                <option class="digits" value="0">black</option>
+                                <option class="digits" value="1">brown</option>
+                                <option class="digits" value="2">red</option>
+                                <option class="digits" value="3">orange</option>
+                                <option class="digits" value="4">yellow</option>
+                                <option class="digits" value="5">green</option>
+                                <option class="digits" value="6">blue</option>
+                                <option class="digits" value="7">violet</option>
+                                <option class="digits" value="8">grey</option>
+                                <option class="digits" value="9">white</option>
+                            </select>
+                        </div>
+                        <div id="band4" class="band">
+                            <select id="multiplier-value">
+                                <option selected="true" disabled="disabled" value="null">O Ω</option>
+                                <option class="multiplier" value="1">black</option>
+                                <option class="multiplier" value="10">brown</option>
+                                <option class="multiplier" value="100">red</option>
+                                <option class="multiplier" value="1k">orange</option>
+                                <option class="multiplier" value="10k">yellow</option>
+                                <option class="multiplier" value="100k">green</option>
+                                <option class="multiplier" value="1M">blue</option>
+                                <option class="multiplier" value="10M">violet</option>
+                                <option class="multiplier" value="100M">grey</option>
+                                <option class="multiplier" value="1g">white</option>
+                                <option class="multiplier" value="0.1">gold</option>
+                                <option class="multiplier" value="0.01">silver</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="resistor2"></div>
+
+                </div>
+                <div class="results-box">
+                    <button id="calculate" class="calculate">Calculate</button>
+                    <div id="result-box" class="result-box">Result: NaN</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: #0C0C0F;">
+        <div class="container">
+            <div class = "footer">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/imbilalyilmaz/" target="_blank">
+                            <i class="fa-brands fa-linkedin fa-2xl"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/imbilalyilmaz" target="_blank">
+                            <i class="fa-brands fa-github fa-2xl"></i>
+                        </a>
+                    </li>
+                </ul>
+                <h2 class="heading-very-small">Bilal Yılmaz</h2>
+                
+            </div>
+        </div>
+    </footer>
+
+
+    
+    <script src="./js/app.js"></script>
+</body>
+</html>

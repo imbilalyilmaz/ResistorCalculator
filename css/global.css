@@ -1,0 +1,28 @@
+/* Texts */
+.text-center {
+    text-align: center;
+}
+.heading-very-small{
+    font-size: 0.75rem;
+}
+.heading-small {
+    font-size: 1.25rem;
+}
+.heading-medium {
+    font-size: 1.5rem;
+}
+.heading-large {
+    font-size: 1.75rem;
+}
+
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.hidden {
+    display: none;
+}
+
+
