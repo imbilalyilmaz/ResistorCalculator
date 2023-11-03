@@ -156,25 +156,3 @@ option {
     color: #7F7F83;
 }
 
-
-
-
-/* #list {
-    background-color: rgba(255, 255, 255, .7);
-    position: absolute;
-    width: 100%;
-    top: 100%;}
-
-.options {
-    width: 100%;
-    padding: 3px;
-    font-size: 0.75rem;
-    text-align: center;
-    list-style: none;
-    cursor: pointer;
-    box-sizing: border-box;
-}
-.options:hover {
-    background-color: rgba(255,255,255,.7);
-    width: 200px;
-} */
