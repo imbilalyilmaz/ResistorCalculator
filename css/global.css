@@ -15,12 +15,11 @@
     font-size: 1.75rem;
 }
 
-
-/* Container */
 .container {
     max-width: 1100px;
     margin: 0 auto;
 }
+
 .hidden {
     display: none;
 }

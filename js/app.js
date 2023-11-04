@@ -53,3 +53,11 @@ calculateButton.addEventListener("click", (e) => {
 
     
 });
+
+
+const lightMode = document.getElementById("light-mode");
+
+lightMode.addEventListener("click", e => {
+    e.preventDefault();
+    document.body.classList.toggle("show-password");
+})

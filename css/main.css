@@ -1,3 +1,11 @@
+:root {
+    --bgColor1: #0C0C0F;
+    --mainBoxColor: #080808;
+    --guiBoxColor: #131417;
+    --resistorsColor: #2b2c31;
+    --textColor: white;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,25 +14,40 @@
 html {
     font-family: 'Sometype Mono', monospace;
 }
+
 #navbar {
-    color: white;
+    color: var(--textColor);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 2rem;
     height: 7dvh;
+    background-color: var(--bgColor1);
 }
 #navbar h1 {
     letter-spacing: 15px
 }
+header {
+    background-color: var(--bgColor1);
+}
+footer {
+    background-color: var(--bgColor1);
+}
 
+body.show-password {
+    --bgColor1: #F6F8FA;
+    --mainBoxColor: #FFFFFF;
+    --guiBoxColor: #F6F8FA;
+    --resistorsColor: #d1d1d1;
+    --textColor: black;
+}
 
 .main-box {
     height: 88dvh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #080808;
+    background-color: var(--mainBoxColor);
 }
 .gui-box {
     height: 500px;
@@ -34,8 +57,8 @@ html {
     align-items: center;
     justify-content: space-around;
     box-shadow: 0 0 10px #00000033;
-    background-color: #131417;
-    border: 5px solid #26282F;
+    background-color: var(--guiBoxColor);
+    border: 5px solid var(--resistorsColor);
     border-radius: 4px;
 }
 .resistor-box{
@@ -47,7 +70,7 @@ html {
 .resistor {
     height: 125px;
     width: 400px;
-    background-color: #2b2c31;
+    background-color: var(--resistorsColor);
     display: flex;
     justify-content: space-around;
 }
@@ -58,22 +81,22 @@ html {
     justify-content: end;
     padding-right: 28px;
     border-radius: 28px;
-    background-color: #2b2c31;
-    box-shadow: 0px 0px 8px black;
+    background-color: var(--resistorsColor);
+    box-shadow: 0px 0px 10px var(--mainBoxColor);
     z-index: 1;
 }
 .band {
     height: 100%;
     width: 35px;
-    background-color: #080808;
+    background-color: var(--mainBoxColor);
     position: relative;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px var(--mainBoxColor);
     
 }
 
 
 .results-box {
-    color: white;
+    color: var(--textColor);
     height: 50px;
     display: flex;
     flex-direction: column;
@@ -81,33 +104,33 @@ html {
     align-items: space-between;
 }
 .result-box {
-    border: 2px solid #7f7f83;
+    border: 2px solid var(--resistorsColor);
     border-radius: 5px;
     padding: 5px;
     margin-top: 5px;
+    background-color: var(--mainBoxColor);
 }
 
 .calculate {
-    background-color: #131417;
-    color: #7f7f83;
+    background-color: var(--mainBoxColor);
     border: none;
-    color: white;
+    color: var(--textColor);
     padding: 10px 24px;
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
-    border: 2px solid #7f7f83;
-    transition-duration: 0.4s;
+    border: 2px solid var(--resistorsColor);
+    /* transition-duration: 0.4s; */
 }
 .calculate:hover {
     background-color: #7f7f83;
-    color: #131417;
     
 }
 
 
 .footer {
-    color: white;
+    color: var(--textColor);
+    background-color: var(--bgColor1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -149,10 +172,18 @@ option {
     padding: 0 10px;
 }
 .footer ul li i {
-    color: #fff;
+    color: var(--textColor);
 }
 .footer ul li i:hover {
     cursor: pointer;
     color: #7F7F83;
 }
+
+#light-mode {
+    cursor: pointer;
+    height: 2rem;
+    padding: 5px;
+
+}
+
 
